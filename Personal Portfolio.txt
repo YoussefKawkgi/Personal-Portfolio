@@ -1,0 +1,316 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header>
+    <nav id='navbar'>
+        <ul class=""nav-links'>
+            <li><a href="#welcome-section" class="nav-link">Welcome</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section id="welcome-section">
+        <h1>Hello, I'm Youssef.</h1>
+        <p>A full stack developer</p>
+        <img src="./Me.jpg" class="portrait" alt="a photo of me">
+    </section>
+
+    <section id="projects">
+        <h1>Here are some of my projects</h1>
+        <div class="projects">
+        <a href="https://github.com/YoussefKawkgi/HTML-CSS-Magazine" target="_blank" class="project-tile">
+            <img src="./Magazine article.png" alt="A screenshot of a magazine article">
+            <p><span>&lt;</span>Magazine Article<span>/&gt;</span></p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi/CSS-Penguin" target="_blank" class="project-tile">
+            <img src="Penguin.png" alt="A CSS drawing of a penguin">
+            <p><span>&lt;</span>Penguin<span>/&gt;</span></p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi/HTML-Survey-Form" target="_blank" class="project-tile">
+            <img src="./Survey.png" alt="A screenshot of a survey form">
+            <p><span>&lt;</span>Survey<span>/&gt;</span></p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi/CSS-Skyline" target="_blank" class="project-tile">
+            <img src="./City Skyline.png" alt="A drawing of a city skyline made in CSS">
+            <p><span>&lt;</span>Skyline<span>/&gt;</span></p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi/HTML-Nutrition-Label" target="_blank" class="project-tile">
+            <img src="./Nutrition Label.png" alt="A screenshot of a nutirtion label">
+            <p><span>&lt;</span>Nutrition Label<span>/&gt;</span></p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi/HTML-Tribute-Page" target="_blank" class="project-tile">
+            <img src="./Tribute Page.png" alt="A tribute page made for Shakespeare">
+            <p><span>&lt;</span>Tribute page<span>/&gt;</span></p>
+        </a>
+        </div>
+    <a href="https://github.com/YoussefKawkgi" class="show-all">
+        Show All <i class="ri-arrow-drop-right-line ri-2x"></i>
+    </a>
+    </section>
+
+    <section id="contact">
+
+    <h1>Feel free to reach out</h1>
+    <p class="invitation">You can reach me through any of these!</p>
+    <div class="social-medias">
+
+        <a href="https://www.linkedin.com/in/youssef-el-kawkgi/" target="_blank"  class="social-media">
+            <i class="ri-linkedin-line ri-2x"></i>
+            <p>LinkedIn</p>
+        </a>
+        <a href="https://github.com/YoussefKawkgi" target="_blank" class="social-media" id="profile-link">
+            <i class="ri-github-line ri-2x"></i>
+            <p>GitHub</p>
+        </a>
+        <a href="mailto:ykawkgi@gmail.com" target="_blank"  class="social-media">
+            <i class="ri-mail-send-line ri-2x"></i>
+            <p>Send an Email</p>
+        </a>        
+        <a href="https://www.instagram.com/youssefkawkgi/" target="_blank"  class="social-media">
+            <i class="ri-instagram-line ri-2x"></i>
+            <p>Instagram</p>
+        </a>
+    </div>
+    </section>
+<footer>Created by Youssef El Kawkgi May 2024</footer>
+</body>
+</html> 
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+    --neutral: #16161a;
+    --base-100: #fffffe;
+    --neutral-focus:#94a1b2;
+    --primary: #7f5af0;
+    --secondary: #72757e;
+    --accent: #7f5af0;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Serif", sans-serif;
+    text-align: center;
+    background-color: var(--neutral);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--neutral);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--neutral-focus);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--base-100);
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+section{
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-color: var(--neutral);
+    color:var(--base-100);
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+}
+
+#welcome-section p {
+    color: var(--primary);
+    font-size: 25px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+#projects {
+    background-color: var(--secondary);
+    color: var(--neutral);
+}
+#projects h1 {
+    border-bottom: 5px solid var(--neutral);
+    width: fit-content;
+    margin: auto;
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral);
+    text-decoration: none;
+    color: var(--accent);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+}
+
+#projects .project-tile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-tile p {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+
+}
+
+#projects .project-tile:hover span {
+    opacity: 100%;
+    color: var(--primary);
+    transition: opacity 0.25s ease-in;
+}
+
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 15px;
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-size: 25px;;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.show-all:hover {
+    background-color: var(--neutral-focus);
+    color: var(--base-100);
+}
+
+#contact {
+    background-color: var(--neutral);
+    color: var(--base-100);
+}
+
+#contact h1 {
+    margin-top: 300px;
+}
+
+#contact .invitation {
+    color: var(--primary);
+    font-size: 25px;
+    font-style: italic;
+}
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+#contact .social-media {
+    text-decoration: none;
+    color: var(--base-100);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+}
+
+#contact .social-media:hover {
+    transform: translate(10px);
+}
+
+img portrait {
+    transition: 3s ease-in;
+}
+
+footer {
+    border-top: 3px solid var(--primary);
+    color: var(--base-100);
+    font-size: 25px;
+    padding: 30px;
+}
+
+@media only screen and (width < 700px) {
+    h1{
+        font-size: 50px;
+    }
+}
+
+** end of undefined **
+
